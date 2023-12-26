@@ -1,0 +1,18 @@
+1492043087|Kafka: The Definitive Guide: Real-Time Data and Stream Processing at Scale
+8862435665|Mastering Apache Kafka: A Comprehensive Guide to Learn Apache Kafka
+1492062499|Mastering Kafka Streams and ksqlDB: Building Real-Time Data Systems by Example
+161729523X|Kafka in Action
+9390684595|Real-Time Streaming with Apache Kafka, Spark, and Storm
+1098138791|Building Real-Time Analytics Systems
+8860471993|Hands-on: Apache Kafka
+1788997824|Apache Kafka Quick Start Guide
+8859920327|Apache Kafka: 100 Interview Questions
+1787283984|Building Data Streaming Applications with Apache Kafka
+1784393096|Learning Apache Kafka - Second Edition
+1491953926|Streaming Architecture: New Designs Using Apache Kafka and MapR Streams
+B0861WN4YS|Effective Kafka: A Hands-On Guide to Building Robust and Scalable Event-Driven Applications with Code Examples in Java
+B0CJRJKKWC|Mastering Apache Kafka: A Comprehensive Guide to Learn Apache Kafka
+1617298689|Kafka Streams in Action, Second Edition
+1617292346|Event Streams in Action: Real-time event systems with Kafka and Kinesis
+1484294890|Kafka Troubleshooting in Production: Stabilizing Kafka Clusters in the Cloud and On-premises
+1617294470|Kafka Streams in Action: Real-time apps and microservices with the Kafka Streams API
