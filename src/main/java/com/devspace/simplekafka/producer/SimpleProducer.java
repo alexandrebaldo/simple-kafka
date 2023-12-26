@@ -35,7 +35,7 @@ public class SimpleProducer {
     final SimpleProducer simpleProducer = new SimpleProducer(kafkaProducer);
 
     try {
-      simpleProducer.buildProducerRecords().forEach(simpleProducer::produce);
+      simpleProducer.buildProducerRecords("/events.txt").forEach(simpleProducer::produce);
 
       simpleProducer.shutdown();
     } catch (Exception ex) {
@@ -83,20 +83,20 @@ public class SimpleProducer {
 
   // -------------------- Instance methods
 
-  private List<ProducerRecord<String, String>> buildProducerRecords()
+  public List<ProducerRecord<String, String>> buildProducerRecords(final String file)
       throws URISyntaxException, IOException {
-    final URL url = Objects.requireNonNull(getClass().getResource("/events.txt"));
+    final URL url = Objects.requireNonNull(getClass().getResource(file));
 
     try (Stream<String> lines = Files.lines(Paths.get(url.toURI()))) {
       return lines.map(SimpleProducer::parseEvent).toList();
     }
   }
 
-  private void produce(ProducerRecord<String, String> producerRecord) {
+  public void produce(ProducerRecord<String, String> producerRecord) {
     kafkaProducer.send(producerRecord, (metadata, exception) -> printMetadata(metadata));
   }
 
-  private void shutdown() {
+  public void shutdown() {
     kafkaProducer.close();
   }
 }

@@ -16,10 +16,38 @@
   </properties>
 
   <dependencies>
+    <!-- Kafka -->
+
     <dependency>
       <artifactId>kafka-clients</artifactId>
       <groupId>org.apache.kafka</groupId>
       <version>3.5.1</version>
+    </dependency>
+
+    <!-- Tests -->
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.10.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-junit-jupiter</artifactId>
+      <version>5.7.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.24.2</version>
     </dependency>
   </dependencies>
 
