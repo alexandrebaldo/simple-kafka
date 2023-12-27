@@ -36,10 +36,10 @@ public class SimpleProducer {
 
     try {
       simpleProducer.buildProducerRecords("/events.txt").forEach(simpleProducer::produce);
-
-      simpleProducer.shutdown();
     } catch (Exception ex) {
       System.out.println("Exception occurred: " + ex);
+    } finally {
+      simpleProducer.shutdown();
     }
   }
 
