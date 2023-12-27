@@ -44,7 +44,7 @@ We are creating a new topic named **books** with 6 partitions.
 
 ## Running the Application
 
-You can run the app directly in your IDE. Both classes **SimpleProducer** and **SimpleConsumer** contain a main method.
+You can run the app directly from your IDE. Both classes **SimpleProducer** and **SimpleConsumer** contain a main method.
 
 Start the consumer first, and it will run indefinitely waiting for new events.
 
